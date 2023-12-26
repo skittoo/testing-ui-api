@@ -9,11 +9,9 @@ module.exports = {
       host: 'localhost',
       ssl: false,
       server_path: 'node_modules/.bin/chromedriver',
+      default_path_prefix: '',
       proxy: undefined,
-      cli_args: [
-        // very verbose geckodriver logs
-        // '-vv'
-      ]
+      cli_args: []
     },
     
     test_settings: {
