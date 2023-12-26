@@ -18,7 +18,7 @@ jobs:
       - run:
           command: npm run test
       - store_test_results:
-          path: /home/circleci/project
+          path: .
 
 workflows:
   e2e-test:
