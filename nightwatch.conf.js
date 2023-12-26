@@ -6,7 +6,10 @@ module.exports = {
     webdriver: {
       start_process: true,
       port: 9515,
+      host: 'localhost',
+      ssl: false,
       server_path: 'node_modules/.bin/chromedriver',
+      proxy: undefined,
       cli_args: [
         // very verbose geckodriver logs
         // '-vv'
