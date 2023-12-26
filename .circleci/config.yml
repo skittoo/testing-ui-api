@@ -18,7 +18,7 @@ jobs:
       - run:
           command: npm run test
       - store_test_results:
-          path: ./
+          path: /tests_output
 
 workflows:
   e2e-test:
