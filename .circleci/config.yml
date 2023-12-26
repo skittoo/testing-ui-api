@@ -12,6 +12,10 @@ jobs:
     docker:
       - image: cimg/node:20.4.0-browsers
     steps:
+      - run:
+          name: Create Test Results Directory
+          command: mkdir -p /tests_output
+
       - browser-tools/install-browser-tools
       - checkout
       - node/install-packages
