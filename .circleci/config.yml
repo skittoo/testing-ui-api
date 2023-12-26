@@ -17,8 +17,8 @@ jobs:
       - node/install-packages
       - run:
           command: npm run test
-      - store_test_results:
-          path: .
+      # - store_test_results:
+      #     path: .
 
 workflows:
   e2e-test:
