@@ -7,12 +7,12 @@ orbs:
   node: circleci/node@4.7
   browser-tools: circleci/browser-tools@1.4.6
 
-
 jobs:
   test:
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:20.4.0-browsers
     steps:
+      - browser-tools/install-browser-tools
       - checkout
       - node/install-packages
       - run:
