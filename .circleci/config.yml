@@ -15,8 +15,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Install Dependencies"
+          command: "npm install"
+      - run:
+          name: "Run Nightwatch Tests"
+          command: "npm test"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
