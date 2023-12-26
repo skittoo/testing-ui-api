@@ -12,17 +12,13 @@ jobs:
     docker:
       - image: cimg/node:20.4.0-browsers
     steps:
-      - run:
-          name: Create Test Results Directory
-          command: sudo mkdir -p tests_output
-
       - browser-tools/install-browser-tools
       - checkout
       - node/install-packages
       - run:
           command: npm run test
       - store_test_results:
-          path: /tests_output
+          path: test-results
 
 workflows:
   e2e-test:
