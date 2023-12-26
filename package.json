@@ -1,0 +1,16 @@
+{
+  "name": "testing-ui-api",
+  "version": "1.0.0",
+  "description": "Testing UI of a website using nightwatch and testing API using super-test framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^120.0.1",
+    "nightwatch": "^3.3.6"
+  }
+}
