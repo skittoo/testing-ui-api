@@ -30,7 +30,7 @@ jobs:
       - run:
           command: npm run start
       - store_test_results:
-          path: /home/circleci/project/tests_output
+          path: /home/circleci/project/mochawesome-report
 
 
 workflows:
