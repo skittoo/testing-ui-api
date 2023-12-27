@@ -30,7 +30,7 @@ jobs:
       - run:
           command: npm run start
       - store_artifacts:
-          path: /home/circleci/project/mochawesome-report/mochawesome.json
+          path: /home/circleci/project/mochawesome-report/mochawesome.html
 
 
 workflows:
