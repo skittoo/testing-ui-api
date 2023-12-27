@@ -29,8 +29,8 @@ jobs:
       - node/install-packages
       - run:
           command: npm run start
-      - store_test_results:
-          path: /home/circleci/project/mochawesome-report
+      - store_artifacts:
+          path: /home/circleci/project/mochawesome-report/mochawesome.html
 
 
 workflows:
