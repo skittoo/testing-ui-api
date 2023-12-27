@@ -4,13 +4,24 @@
   "description": "Testing UI of a website using nightwatch and testing API using super-test framework.",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch --tags search,concat"
+    "test-nightwach": "nightwatch --tags search,contact",
+    "dev": "nodemon ./node_modules/mock-user-auth/bin/www.js",
+    "test": "mocha --reporter mochawesome test.js",
+    "start": "npm-run-all test-nightwach dev test --parallel dev test",
+    "stop": "npm-run-all --sequential --poll 1000 --signal SIGINT stop-dev stop-test",
+    "stop-dev": "pkill -f 'nodemon ./node_modules/mock-user-auth/bin/www.js'",
+    "stop-test": "pkill -f 'mocha --reporter mochawesome test.js'"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "casual": "^1.6.2",
     "chromedriver": "^120.0.1",
-    "nightwatch": "^3.3.6"
+    "mock-user-auth": "^1.0.15",
+    "nightwatch": "^3.3.6",
+    "sleep": "^6.3.0",
+    "supertest": "^6.3.3"
   }
 }
