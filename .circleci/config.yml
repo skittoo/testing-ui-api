@@ -17,6 +17,8 @@ jobs:
       - node/install-packages
       - run:
           command: npm run start
+      - run:
+          command: npm run test
       - store_test_results:
           path: /home/circleci/project
 
