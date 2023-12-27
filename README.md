@@ -2,10 +2,4 @@
 Testing UI of a website using nightwatch and testing API using super-test framework.
 
 # Template:
-[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
-
-# Example:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
-
-# Example for specific branch:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/?branch=teesloane-patch-5)
+[![cci-8khhgk](https://circleci.com/gh/<cci-8khhgk>/testing-ui-api-3.svg?style=svg)](https://app.circleci.com/pipelines/circleci/9ZhHaXBjJJR2TqyHhqsq5n)
