@@ -1,4 +1,4 @@
-const validValues = ['/Users/omarmetwalli/Desktop/personal/testing/tests/dump_files/first_option.png'];
+const validValues = ['./dump_files/first_option.png'];
 const invalidValues = [];
 const required = false;
 
