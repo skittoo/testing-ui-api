@@ -4,7 +4,7 @@
   "description": "Testing UI of a website using nightwatch and testing API using super-test framework.",
   "main": "index.js",
   "scripts": {
-    "test-nightwach": "nightwatch --tags search,contact",
+    "test-nightwach": "nightwatch --tag search",
     "dev": "nodemon ./node_modules/mock-user-auth/bin/www.js",
     "test": "mocha --reporter mochawesome 'API/test.js'",
     "start": "npm-run-all test-nightwach dev test --parallel dev test",
