@@ -17,8 +17,8 @@ jobs:
       - node/install-packages
       - run:
           command: npm run test-nightwach
-      - store_test_results:
-          path: /home/circleci/project/tests_output
+      - store_artifacts:
+          path: /home/circleci/project/tests_output/nightwatch-html-report/index.html
 
   test-api:
     docker:
@@ -38,3 +38,5 @@ workflows:
     jobs:
       - test-ui
       - test-api
+
+
