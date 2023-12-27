@@ -7,7 +7,7 @@
     "test-nightwach": "nightwatch --tag search",
     "dev": "nodemon ./node_modules/mock-user-auth/bin/www.js",
     "test": "mocha --reporter mochawesome 'API/test.js'",
-    "start": "npm-run-all test-nightwach dev test --parallel dev test",
+    "start": "npm-run-all --parallel test-nightwach dev test ",
     "stop": "npm-run-all --sequential --poll 1000 --signal SIGINT stop-dev stop-test",
     "stop-dev": "pkill -f 'nodemon ./node_modules/mock-user-auth/bin/www.js'",
     "stop-test": "pkill -f 'mocha --reporter mochawesome test.js'"
