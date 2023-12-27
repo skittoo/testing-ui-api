@@ -11,7 +11,6 @@
     "stop": "npm-run-all --sequential --poll 1000 --signal SIGINT stop-dev stop-test",
     "stop-dev": "pkill -f 'nodemon ./node_modules/mock-user-auth/bin/www.js'",
     "stop-test": "pkill -f 'mocha --reporter mochawesome test.js'"
-
   },
   "keywords": [],
   "author": "",
@@ -21,6 +20,7 @@
     "chromedriver": "^120.0.1",
     "mock-user-auth": "^1.0.15",
     "nightwatch": "^3.3.6",
+    "npm-run-all": "^4.1.5",
     "sleep": "^6.3.0",
     "supertest": "^6.3.3"
   }
