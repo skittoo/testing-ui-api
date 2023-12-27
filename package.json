@@ -6,7 +6,7 @@
   "scripts": {
     "test-nightwach": "nightwatch --tags search,contact",
     "dev": "nodemon ./node_modules/mock-user-auth/bin/www.js",
-    "test": "mocha --reporter mochawesome test.js",
+    "test": "mocha --reporter mochawesome 'API/test.js'",
     "start": "npm-run-all test-nightwach dev test --parallel dev test",
     "stop": "npm-run-all --sequential --poll 1000 --signal SIGINT stop-dev stop-test",
     "stop-dev": "pkill -f 'nodemon ./node_modules/mock-user-auth/bin/www.js'",
