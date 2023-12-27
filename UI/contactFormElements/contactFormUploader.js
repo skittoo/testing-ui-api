@@ -1,4 +1,4 @@
-const validValues = ['./UI/dump_files/first_option.png'];
+const validValues = ['/home/circleci/project/UI/dump_files/first_option.png'];
 const invalidValues = [];
 const required = false;
 
