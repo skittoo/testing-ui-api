@@ -25,3 +25,20 @@ Search testing aims to validate the accuracy and relevance of search results whe
 
 ### Process
 1. **Query Testing**: Test various search queries to confirm that the results match the specified item and filter out unrelated content.
+
+# API Testing
+
+## Overview
+
+This section is dedicated to comprehensive API testing, covering all available API methods. The primary goal is to systematically assess the API's behavior under various scenarios, including both valid and invalid requests, to gain insights into how the API reacts in different situations.
+
+## Testing Approach
+
+1. **Valid Requests:**
+   - Evaluate each API method with a diverse set of valid inputs to ensure accurate processing and consistent outcomes.
+   - Verify that the API responds promptly and reliably to valid requests.
+
+2. **Invalid Requests:**
+   - Test API methods with invalid inputs, including incorrect data formats, missing parameters, and unauthorized requests.
+   - Assess the API's error-handling mechanisms and ensure meaningful error messages are returned.
+
