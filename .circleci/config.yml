@@ -16,9 +16,9 @@ jobs:
       - checkout
       - node/install-packages
       - run:
-          command: npm run start
+          command: npm run test-nightwach
       - run:
-          command: npm run test
+          command: npm run start
       - store_test_results:
           path: /home/circleci/project/tests_output
 
